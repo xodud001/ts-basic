@@ -1,5 +1,6 @@
-function greet(person, date){
-    console.log(`Hello ${person}, today is ${date}!`);
+function greet(person: string, date: Date){
+    console.log(`Hello ${person}, today is ${date.toDateString()}!`);
 }
 
-greet("Brendan");
+// Date()는 string을 반환하기 때문에 에러 발생
+greet("Maddsion", Date());
