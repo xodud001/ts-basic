@@ -2,5 +2,5 @@ function greet(person: string, date: Date){
     console.log(`Hello ${person}, today is ${date.toDateString()}!`);
 }
 
-// Date()는 string을 반환하기 때문에 에러 발생
-greet("Maddsion", Date());
+// 원하는 Date 객체는 new Date()로 생성해야 한다.
+greet("Maddsion", new Date());
